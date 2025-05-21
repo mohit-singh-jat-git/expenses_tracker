@@ -6,15 +6,15 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Response {
     private int statusCode;
     private String message;
     private String token;
     private String role;
     private String expirationTime;
+    private String name;
+    private String email;
     private UserDTO userDTO;
     private ExpenseDto expenseDTO;
-
-
 }
